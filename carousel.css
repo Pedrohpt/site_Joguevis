@@ -3,7 +3,7 @@
 /* Padding below the footer and lighter body text */
 
 body {
-	background: #E3E3E3;
+  background:url(img/background.jpg);
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
@@ -68,14 +68,27 @@ body {
 .featurette-heading{
 	color: #000;
 	font-size: 3em;
+	text-shadow: 2px 2px #b8b8b8;
 } 
 
 .bd-placeholder-img-lg{
 	border-radius: 25px;
+	box-shadow: 5px 5px 5px 5px #B8B8B8;
 }
 
+
+
 .bd-placeholder-img{
-	background: grey;
+	background: grey;	
+	box-shadow: 3px 3px 3px 3px #B8B8B8;
+}
+
+.bd-placeholder-img2{
+	background: green;
+}
+
+.bd-placeholder-img3{
+	background: red;
 }
 
 .link-icon{
@@ -90,8 +103,20 @@ body {
 	color: #FF009B;
 }
 
-.link-icon-wpp:hover{
+.link-icon-wpp{
 	color: green;
+}
+
+.link-icon-wpp:hover{
+	color: #25CD00;
+}
+
+.link-icon-lk:hover{
+	color: blue;
+}
+
+.link-icon-yt:hover{
+	color: red;
 }
 
 .fa-brands{
@@ -108,15 +133,16 @@ body {
     padding-top: 5px;
 }
 
-.whatsapp img:hover{
-	width: 100px;
+.form-control{
+	border-radius: 15px;
+	border: 2px solid gray;
 }
 
-.whatsapp img{
-    padding-left: 10px;
-    width: 90px;
-    z-index: 2;
+.mt-3 h2{
+	margin-top: -40px;
+	text-align:center;
 }
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -132,11 +158,18 @@ body {
     font-size: 50px;
   }
   
+  .carousel-inner{
+	  color: black;
+  }
+  
 }
 
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
+  }
+  .carousel-inner{
+	  color: black;
   }
   
 }
